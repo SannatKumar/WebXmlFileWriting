@@ -9,7 +9,11 @@ Microsoft:Aspnet.WebApi.Cors, Newtonsoft Json is the package used to work with J
 
 # Steps
 
+Create a Asp.Net Core web application project with WebApi type that has a template api for weather forecast.
+
 Create a Folder Name Models and Add a Model class for your data.
 
-In our Case it is "User" with different methods and properties.
+In our Case it is "User" with different methods and fields.
+
+
 
