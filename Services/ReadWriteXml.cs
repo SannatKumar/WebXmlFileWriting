@@ -8,12 +8,11 @@ namespace Create_Xml.Services
 {
     public class ReadWriteXml
     {
+            
 
-        
-
-        public void SaveUserList(User userList)
+        public void SaveUserList(UserModel userList)
         {
-            System.Xml.Serialization.XmlSerializer mySerializeFile = new System.Xml.Serialization.XmlSerializer(typeof(User));
+            System.Xml.Serialization.XmlSerializer mySerializeFile = new System.Xml.Serialization.XmlSerializer(typeof(UserModel));
             var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//UserDetails.xml";
             System.IO.FileStream file = System.IO.File.Create(path);
             mySerializeFile.Serialize(file, userList);
