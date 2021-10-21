@@ -18,3 +18,5 @@ In our Case it is "User" with different methods and fields.
 Next Step is we create a controller with API and Empty template.
 In our case the file is UserDetailController.
 
+
+
