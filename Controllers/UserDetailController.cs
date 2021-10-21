@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Cors;
 namespace Create_Xml.Controllers
 {
     [EnableCors]
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class UserDetailController : ControllerBase
     {
@@ -22,11 +22,12 @@ namespace Create_Xml.Controllers
             return userList;
         }
 
+        [Route("userdetail")]
         [HttpPost]
         public ActionResult<IEnumerable<UserModel.User>> PostContentList(UserModel.User ContentList)
         {
-            userList.Add(new UserModel.User
-            {
+            userList.Add(ContentList
+                /*new UserModel.User{
                 Id = 1,
                 FirstName = "Raj",
                 LastName = "Tiwari",
@@ -37,7 +38,7 @@ namespace Create_Xml.Controllers
                 Email = "rajkumarmailuser@gmailc.om",
                 Language = "Nepali",
                 Gender = "Male",
-            }
+            }*/
             );
             return userList;
 
