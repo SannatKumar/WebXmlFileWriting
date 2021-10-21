@@ -28,4 +28,5 @@ namespace Create_Xml.Models
         public string Gender { get; set; }
 
     }
+    
 }
